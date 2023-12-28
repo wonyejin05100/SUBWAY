@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title> SUBWAY 써브웨이 </title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title> 원예진 - SUBWAY 써브웨이 </title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shoutcut icon" href="./images/subway.logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Noto+Sans+KR&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script src="./js/script.js"></script>
 </head>
@@ -117,55 +118,151 @@
                 <!-- 상단 제목, 종류 -->
                 <div class="top_bar">
                     <h2>Subway's Menu</h2>
-                    <div class="tab">
-                        <ul>
-                            <li><a href="#">클래식</a></li>
-                            <li><a href="#">프레쉬&라이트</a></li>
-                            <li><a href="#">프리미엄</a></li>
-                            <li><a href="#">아침메뉴</a></li>
-                        </ul>
+                    <div class="tab_menu">
+                        <div class="tab" id="tab1">클래식</div>
+                        <div class="tab" id="tab2">프레쉬&라이트</div>
+                        <div class="tab" id="tab3">프리미엄</div>
+                        <div class="tab" id="tab4">아침메뉴</div>
                     </div>
                 </div>
                 <!-- 메뉴 이미지,이름,설명 -->
                 <div class="menu_box">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./images/sandwich_cl06_01.jpg" alt="에그마요">
-                                <strong>에그마요</strong>
-                                <p>부드러운 달걀과 고소한 마요네즈가 만나<br>
-                                    더 부드러운 스테디셀러</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/sandwich_cl01_01.jpg" alt="이탈리안 비엠티">
-                                <strong>이탈리안 비엠티</strong>
-                                <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의<br>
-                                    조화! 전세계가 사랑하는 써브웨이의 베스트셀러!<br>
-                                    Biggest Meatiest Tastiest, its' B.M.T!</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/sandwich_cl02_01.jpg" alt="비엘티">
-                                <strong>비엘티</strong>
-                                <p>오리지널 아메리칸 스타일 베이컨의<br>
-                                    풍미와 바삭함 그대로
-                                </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/sandwich_cl04_01.jpg" alt="햄">
-                                <strong>햄</strong>
-                                <p>기본 중에 기본!<br>
-                                    풍부한 햄이 만들어내는<br>
-                                    입 안 가득 넘치는 맛의 향연
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="tab-content" id="content1">
+                        <ul class="wow animate__animated animate__fadeIn">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_cl06_01.jpg" alt="에그마요">
+                                    <strong>에그마요</strong>
+                                    <p>부드러운 달걀과 고소한 마요네즈가 만나<br>
+                                        더 부드러운 스테디셀러</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_cl01_01.jpg" alt="이탈리안 비엠티">
+                                    <strong>이탈리안 비엠티</strong>
+                                    <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의<br>
+                                        조화! 전세계가 사랑하는 써브웨이의 베스트셀러!<br>
+                                        Biggest Meatiest Tastiest, its' B.M.T!</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_cl02_01.jpg" alt="비엘티">
+                                    <strong>비엘티</strong>
+                                    <p>오리지널 아메리칸 스타일 베이컨의<br>
+                                        풍미와 바삭함 그대로
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_cl04_01.jpg" alt="햄">
+                                    <strong>햄</strong>
+                                    <p>기본 중에 기본!<br>
+                                        풍부한 햄이 만들어내는<br>
+                                        입 안 가득 넘치는 맛의 향연
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="content2">
+                        <ul class="wow animate__animated animate__fadeIn">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_fl01_01.jpg" alt="로티세리 바비큐 치킨">
+                                    <strong>로티세리 바비큐 치킨</strong>
+                                    <p>촉촉한 바비큐 치킨의 풍미가득.<br>
+                                        손으로 찢어 더욱 부드러운 치킨의 혁명</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_fl02_01.jpg" alt="로스트 치킨">
+                                    <strong>로스트 치킨</strong>
+                                    <p>오븐에 구워 담백한 저칼로리<br>
+                                        닭가슴살의 건강한 풍미</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_fl04_01.jpg" alt="써브웨이 클럽">
+                                    <strong>써브웨이 클럽</strong>
+                                    <p>명실공히 시그니처 써브!<br>
+                                        치킨 슬라이스, 햄, 베이컨의 완벽한 앙상블
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_fl05_01.jpg" alt="치킨 슬라이스">
+                                    <strong>치킨 슬라이스</strong>
+                                    <p>닭가슴살로 만든 치킨 슬라이스로 즐기는<br>
+                                        담백한 맛!
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="content3">
+                        <ul class="wow animate__animated animate__fadeIn">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_pm10_01.jpg" alt="쉬림프">
+                                    <strong>쉬림프</strong>
+                                    <p> 탱글한 식감이 그대로 살아있는 통새우가<br>
+                                        5마리 들어가 한 입 베어 먹을 때 마다<br>
+                                        진짜 새우의 풍미가 가득</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_pm08_01.jpg" alt="풀드 포크 바비큐">
+                                    <strong>풀드 포크 바비큐</strong>
+                                    <p>훈연한 미국 정통 스타일의 리얼 바비큐 풀드포크가<br>
+                                        들어간 샌드위치</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_pm01_01.jpg" alt="스테이크&치즈">
+                                    <strong>스테이크&치즈</strong>
+                                    <p>육즙이 쫙~<br>
+                                        풍부한 비프 스테이크의 풍미가 입안 한가득
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_pm02_01.jpg" alt="치킨 베이컨 아보카도">
+                                    <strong>치킨 베이컨 아보카도</strong>
+                                    <p>담백하게 닭가슴살로 만든 치킨 슬라이스와 베이컨,<br>
+                                        부드러운 아보카도의 만남
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="content4">
+                        <ul class="wow animate__animated animate__fadeIn">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_bf01.png" alt="햄, 에그&치즈">
+                                    <strong>햄, 에그&치즈</strong>
+                                    <p>푹신한 오믈렛과 햄의 가장 클래식한 조화</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sandwich_bf02.png" alt="웨스턴, 에그 & 치즈">
+                                    <strong>웨스턴, 에그 & 치즈</strong>
+                                    <p>토마토, 피망, 양파 세가지 야채가 더해져<br>
+                                        더욱 신선한 하루 시작</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="infomation">
@@ -286,6 +383,12 @@
             autoplay: {
                 delay: 2000, // 슬라이드 간의 간격을 밀리초 단위로 설정 (예: 2000 밀리초 = 2초)
                 disableOnInteraction: false, // 사용자 상호 작용 후에도 자동 슬라이드 계속
+            },
+        });
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".btn_next",
+                prevEl: ".btn_prev",
             },
         });
     </script>
